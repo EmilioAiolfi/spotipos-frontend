@@ -1,0 +1,8 @@
+@import 'base';
+
+
+$form-filter-bg-color: $primary-color-dark !default;
+
+.form-filter-range {
+  background: $form-filter-bg-color;
+}
