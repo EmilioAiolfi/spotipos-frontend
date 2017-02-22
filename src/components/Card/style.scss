@@ -1,0 +1,152 @@
+@import 'base';
+
+
+%card-holder {
+  width: $card-width;
+  height: $card-height;
+  background-color: $card-bgcolor;
+  margin-bottom: 15px;
+}
+
+.card {
+  @extend %card-holder;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px 0 $card-shadow-color;
+
+  .card-container {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    // flex-wrap: wrap;
+  }
+
+  .card-highlight {
+    position: relative;
+    flex: 0 0 297px;
+    height: 100%;
+    img {
+      max-width: 100%;
+      width: 100%;
+      height: 100%;
+    }
+
+    // img {
+    //   opacity: 1;
+    //   transition: opacity 0.3s;
+    // }
+
+    // img[data-src] {
+    //   opacity: 0;
+    // }
+    // width: 297px;
+    // height: 224px;
+  }
+
+  // .card-image {
+  //   width: 297px;
+  //   height: 100%;
+  //   img {
+  //     max-width: 100%;
+  //     width: 100%;
+  //     height: 100%;
+  //   }
+  // }
+
+  .card-content {
+    // flex: 0 0 100%;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    flex-wrap: wrap;
+  }
+
+  .card-header {
+    width: 100%;
+    margin-bottom: 9px;
+    padding: 12px 18px 0;
+    box-sizing: border-box;
+
+    .card-title {
+      margin: 12px 0 0 0;
+
+      .card-link {
+        font-size: 18px;
+        color: $card-title-color;
+        text-decoration: none;
+      }
+
+    }
+  }
+
+  .card-body {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 18px 18px;
+    box-sizing: border-box;
+  }
+
+  .card-description {
+    width: 500px;
+    height: 84px;
+    // font-size: 14px;
+    margin: 0;
+    color: $card-description-color;
+    @include excerpt($font-size: 14px, $line-height: 1.4, $lines-to-show: 4, $excerpt-bg: $white-color);
+  }
+
+  .card-footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    height: 50px;
+    background-color: $card-footer-bgcolor;
+    box-shadow: 0 -1px 0 0 $card-footer-shadow-color;
+
+    padding: 0 8px 0 18px;
+    box-sizing: border-box;
+
+    .card-details {
+      padding: 5px 0;
+      .card-details-item {
+        display: inline-block;
+        text-align: center;
+        padding: 0 14px 0 0;
+        &:last-child {
+          padding: 0;
+        }
+      }
+      .card-details-item-name {
+        display: block;
+        text-align: center;
+        font-size: 13px;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+    }
+
+
+    .card-actions {
+      padding: 9px 0;
+    }
+
+  }
+
+  .card-price {
+    font-family: $card-price-fontfamily;
+    font-size: 23.1px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.39;
+    color: $card-price-color;
+
+    &.active-floating {
+      position: absolute;
+    }
+  }
+
+}
+
