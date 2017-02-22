@@ -1,0 +1,24 @@
+@import 'mixins';
+
+
+.map {
+  border: 1px solid;
+  position: relative;
+  width: 1400px;
+  height: 1000px;
+
+  @include bp(mid-screen){
+    transform: scale(.8) translateX(calc(-50% - -48vw));
+  }
+
+}
+
+.province {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .province-name {
+    text-align: center;
+  }
+}
