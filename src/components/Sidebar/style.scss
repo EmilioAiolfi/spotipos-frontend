@@ -1,0 +1,38 @@
+@import 'base';
+
+
+
+//
+// Variables
+// --------------------------------------------------
+
+$sidebar-bgcolor: $primary-color-dark;
+
+
+.sidebar {
+  width: 110px;
+  background: $sidebar-bgcolor;
+}
+
+
+@media (max-width: 800px) {
+  .aside {
+    display: none;
+  }
+
+  .aside {
+    position: absolute;
+    top: 0;
+    right: -100vw;
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    transition: all 0.2s ease;
+    overflow: auto;
+
+    &.open {
+      right: 0;
+      box-shadow: 2px 0 8px rgba(0,0,0,0.24);
+    }
+  }
+}
