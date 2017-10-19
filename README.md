@@ -8,6 +8,10 @@ $ npm i
 $ npm start
 ```
 
+## URLS
+ - /map
+ - /ads
+
 ## Features
 - [ES2015](https://babeljs.io/docs/learn-es2015)
 - [React](https://github.com/facebook/react)
