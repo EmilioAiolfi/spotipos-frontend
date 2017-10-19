@@ -3,7 +3,7 @@ Result page of all Spotippos real estate listings
 
 ## Getting started
 ```bash
-$ git clone https://github.com/EmilioAiolfi/react-stater-project.git
+$ git clone https://github.com/EmilioAiolfi/spotipos-frontend.git
 $ npm i
 $ npm start
 ```
